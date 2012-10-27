@@ -24,9 +24,13 @@ function css_js() { ?>
 <script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
 <script type="text/javascript">
 jQuery(document).ready(function() {
-    jQuery('#slider').cycle({
-		fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-	});
+    jQuery('#slider')
+		.after('<div id="slider-nav">') 
+		.cycle({ 
+			fx:     'fade', 
+			speed:  'fast',
+			pager:  '#slider-nav' 
+		});
 });
 </script>
 <?php }

@@ -236,6 +236,21 @@ h6 {
 	padding: 10px;
 	background: rgba(255,255,255,.8);
 }
+#slider-nav {
+	text-align: center;
+	margin: 10px auto;
+}
+#slider-nav a {
+	margin: 0 5px;
+	display: inline-block;
+	background: url('images/slider-nav.png') no-repeat top left;
+	text-indent: -99999px;
+	width: 10px;
+	height: 10px;
+}
+#slider-nav a.activeSlide {
+	background: url('images/slider-nav.png') no-repeat top right;
+}
 
 /* Mission Statement -------------------------------------------- */
 .motto {
